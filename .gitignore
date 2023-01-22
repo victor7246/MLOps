@@ -129,9 +129,9 @@ dmypy.json
 .pyre/
 
 # Saved model path
-*.pth
+#*.pth
 
 # Do not upload images
-*.jpeg
-*.png
-*.jpg
+#*.jpeg
+#*.png
+#*.jpg

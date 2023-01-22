@@ -1,8 +1,14 @@
+import sys
 import torch
 import onnxruntime
 from pytorch_model import Classifier
 
-def convert_torch_to_onnx(saved_model_path, onnx_filename="model.onnx"):
+if __name__ == '__main__':
+    
+    saved_model_path = sys.argv[1]
+
+    onnx_filename = "model.onnx"
+
     model = Classifier()
     model.eval()
     model.load_state_dict(torch.load(saved_model_path))
